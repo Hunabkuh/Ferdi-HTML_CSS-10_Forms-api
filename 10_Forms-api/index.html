@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
+    <title>Document</title>
+</head>
+<body>
+<!-- FORMULARIO COMPLEJO
+
+Ampliar el formulario anterior (*), o bien crear uno nuevo, que contenga al menos dos partes, y probar a delimitar zonas con fieldset, al que puedes darle un nombre mediante legend.
+
+(*) en este caso, guardar una copia del anterior para entregar
+
+Probar otros tipos de inputs como password y tel, y atributos como checked, y otros.
+
+Que sea responsive para pantallas verticales.
+
+Que se envíe a tu email, mediante una api como formsubmit.co . Luego puedes substituir tu email en el código por la numeración que te dan.
+
+Cuando todo te funcione, prueba a mejorar la distribución, colores, poner imágenes, etc.
+
+No olvides poner NAMES para que te llegue la información!
+
+Trabajo individual, pero se comparten éxitos y frustraciones en grupos pequeños. -->
+
+
+    <header>
+        <h1>Alquiler de coches nunca visto!</h1>
+    </header>
+
+
+    <section>
+
+        <div class="div-section">
+        <form action="enviar-datos.html" method="get">
+
+            <!-- FIELDSET 1 -->
+
+            <fieldset class="cont-fieldset">
+            <legend>Datos personales</legend>
+
+                <div class="cont-info-personal">
+
+                    <label for="sexo">Género:</label>
+                    <select id="sexo" name="sexo" required>
+                        <option value="hombre">Masculino</option>
+                        <option value="mujer">Femenino</option>
+                        <option value="unicornio">Unicornio</option>
+                    </select><br>
+
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" placeholder="John" id="nombre" name="nombre" required><br>
+
+                    <label for="apellido">Apellido: </label>
+                    <input type="text" placeholder="Connor" id="apellido" name="apellido" required><br>
+
+                    <label for="telefono">Teléfono: </label>
+                    <input type="tel" pattern="+34 [0-9]{3} [0-9]{3} [0-9]{3}" placeholder="+34 123 456 789" id="telefono" name="telefono" required><br>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" placeholder="hastalavista_baby@skynet.com" id="email" name="email" required>
+
+                </div>
+
+            </fieldset>
+
+            <!-- FIELDSET 2 -->
+
+            <fieldset class="cont-fieldset">
+            <legend>Escoja un tipo de vehículo</legend>
+
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bicicletas">
+                <label for="vehicle1"> Bicicletas</label><br>
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Motos">
+                <label for="vehicle2"> Motos</label><br>
+                <input type="checkbox" id="vehicle3" name="vehicle3" value="Coches">
+                <label for="vehicle3"> Coches</label>
+                <input type="checkbox" id="vehicle3" name="vehicle3" value="Camiones">
+                <label for="vehicle3"> Camiones</label>
+
+
+            </fieldset>
+
+            <!-- FIELDSET 3: COMPLETAR FORM -->
+
+            <fieldset class="cont-fieldset">
+            <legend>Completar formulario</legend>
+
+                <div class="div-fieldset-3">
+                    <label for="completar">Enviar todo super-mega-encriptado</label><br>
+                    <input type="submit" name="completar" id="completar" value="Enviar propuesta"><br>
+                </div>
+
+                <div class="div-reset">
+                    <input type="reset" name="reset" id="reset" value="Volver a empezar">
+                </div>
+
+            </fieldset>
+
+        </form>
+        </div>
+
+    </section>
+
+
+    <footer class="footer">
+      <div class="cont-div-footer">
+        <div class="div-footer"><h5>(c) 2024 Hunabkuh Design</h5></div>
+        <div class="div-footer"><h5>Términos/Condiciones de uso web</h5></div>
+        <div class="div-footer"><h5>Política de privacidad</h5></div>
+      </div>
+    </footer>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+
+</script> -->
+
+</body>
+</html>
